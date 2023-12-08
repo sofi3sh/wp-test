@@ -1,0 +1,87 @@
+.article-card{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.article-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+    max-width: 980px !important;
+}
+
+.article__info{
+    display: flex;
+    gap: 20px;
+}
+.date{
+    opacity: 0.7;
+}
+.article__info__img{
+    display: flex;
+    align-items: center;
+}
+
+.reed__more{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination{
+    margin: 0 auto;
+}
+
+.popup-content {
+    width: 80%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 9999;
+}
+
+.popup-read-more{
+    display: flex;
+    justify-content: center;
+}
+
+.popup__image{
+    display: flex;
+    justify-content: center;
+}
+
+.pop__up__close{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Стилі для заборони скролінгу тіла сайту */
+.body-lock {
+    overflow: hidden;
+}
+
+/* Стилі для додавання скролу на мобільних пристроях */
+.mobile-scroll {
+    overflow-y: scroll;
+}
+
+
+@media screen and (max-width: 600px) {
+  .article__info{
+      flex-direction: column;
+  }
+    .article__info__img{
+        justify-content: center;
+    }
+
+
+}
+
+
+
